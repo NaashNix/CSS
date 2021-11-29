@@ -127,17 +127,38 @@
                     color: red;
                 }*/
 
-        /*Adjacent combinator*/
-        /*Para should be right next to h1 - select only one*/
-        h1 + p {
+        /*  !*Adjacent combinator*!
+          !*Para should be right next to h1 - select only one*!
+          h1 + p {
+              color: red;
+          }*/
+
+        /*General Siblings Combinator*/
+        h1 ~ p {
             color: red;
         }
 
     </style>
 </head>
 <body id="b">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam atque consequuntur dignissimos eius ex,
+    fugit ipsam iure maiores necessitatibus omnis placeat praesentium quaerat qui rerum saepe sunt tempore voluptas!</p>
 <h1>Outside of header</h1>
+<h2>Hello</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque labore maxime quisquam rerum! Aut
+    consectetur culpa eveniet excepturi facere, sint! Cum distinctio ducimus eaque fuga ipsam nihil quia unde.</p>
+
+<section>
+    <p>Inside section - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet, animi architecto aspernatur
+        aut consequatur
+        doloremque, ducimus fuga hic illo illum natus numquam quas quis ratione recusandae sequi ut voluptas!</p>
+</section>
+<hr>
+
 <header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto asperiores, dignissimos dolore
+        dolorem esse illo inventore iure laboriosam minus odio officia, pariatur quia quisquam quo ratione repellendus
+        reprehenderit sed!</p>
     <h1 class="selectedPara" id="my-header">Hello There..! Inside of header</h1>
     <section>
         <h1>Hello. im inside a section..</h1>
@@ -173,7 +194,9 @@
         <li>IJSE</li>
     </ul>
     <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cupiditate dicta minima nesciunt perferendis quasi sapiente! Eveniet excepturi inventore ipsa labore quo reiciendis repudiandae totam vitae. Aliquid aspernatur quas ut.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cupiditate dicta minima nesciunt perferendis quasi
+        sapiente! Eveniet excepturi inventore ipsa labore quo reiciendis repudiandae totam vitae. Aliquid aspernatur
+        quas ut.</p>
 </header>
 <main>
     <h1>Hello</h1>
