@@ -114,16 +114,22 @@
               }*/
 
 
-        /* CSS Combinators*/
+        /* CSS Combinators - use to combine different css selectors and select*/
 
-        /*Descendant Combinator*/
-        body header h1 {
-            color: white;
-            background-color: red;
+        /*        !*Descendant Combinator (Child)*!
+                #b header h1 {
+                    color: white;
+                    background-color: red;
+                }*/
+
+        /*Child Combinator (Direct Child)*/
+        body > header > h1 {
+            color: red;
         }
+
     </style>
 </head>
-<body>
+<body id="b">
 <h1>Outside of header</h1>
 <header>
     <h1 class="selectedPara" id="my-header">Hello There..! Inside of header</h1>
