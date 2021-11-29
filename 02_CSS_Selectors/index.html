@@ -63,7 +63,7 @@
 
              h1.selectedPara#my-header{
              color: red;
-        }
+             }
 
     */
 
@@ -72,24 +72,41 @@
 
         /*Pseudo classes - select according to the element state*/
 
-        li:first-child {
-            color: red;
-        }
+        /*   li:first-child {
+               color: red;
+           }
 
-        li:last-child {
-            color: green;
-        }
+           li:last-child {
+               color: green;
+           }
 
-        li:nth-child(4) {
-            color: blue;
-        }
+           li:nth-child(4) {
+               color: blue;
+           }
 
-        h1:hover {
-            color: red;
-        }
+           h1:hover {
+               color: red;
+           }*/
 
 
         /*Pseudo Element - select specific part of a selected element text*/
+        p::first-letter {
+            font-size: 50px;
+            color: red;
+        }
+
+        p::selection {
+            background-color: red;
+            color: white;
+        }
+
+        li::marker {
+            color: orange;
+        }
+
+        p::first-line {
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -97,7 +114,8 @@
     <h1 class="selectedPara" id="my-header">Hello There..!</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consequatur culpa distinctio
         dolore, doloremque eum harum illo iste modi molestiae nisi nulla odit pariatur sed vitae voluptas. Esse,
-        perferendis?</p>
+        perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam atque beatae culpa debitis
+        dolorum enim est ex expedita itaque magnam, minima odit officia omnis porro quis saepe similique ut?</p>
     <p class="selectedPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aperiam beatae
         consequatur culpa cumque
         dignissimos eveniet incidunt laboriosam mollitia, nisi qui quisquam repellendus repudiandae sunt tempora ut
