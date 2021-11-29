@@ -90,33 +90,43 @@
 
 
         /*Pseudo Element - select specific part of a selected element text*/
-        p::first-letter {
-            font-size: 50px;
-            color: red;
-        }
+        /*      p::first-letter {
+                  font-size: 50px;
+                  color: red;
+              }
 
-        p::selection {
-            background-color: red;
+              p::selection {
+                  background-color: red;
+                  color: white;
+              }
+
+              li::marker {
+                  color: orange;
+              }
+
+              p::first-line {
+                  color: blue;
+              }
+
+              !*change list style*!
+              li{
+                  list-style: lower-roman;
+              }*/
+
+
+        /* CSS Combinators*/
+
+        /*Decendent Combinator*/
+        header h1 {
             color: white;
-        }
-
-        li::marker {
-            color: orange;
-        }
-
-        p::first-line {
-            color: blue;
-        }
-
-        /*change list style*/
-        li{
-            list-style: lower-roman;
+            background-color: red;
         }
     </style>
 </head>
 <body>
+<h1>Outside of header</h1>
 <header>
-    <h1 class="selectedPara" id="my-header">Hello There..!</h1>
+    <h1 class="selectedPara" id="my-header">Hello There..! Inside of header</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consequatur culpa distinctio
         dolore, doloremque eum harum illo iste modi molestiae nisi nulla odit pariatur sed vitae voluptas. Esse,
         perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam atque beatae culpa debitis
