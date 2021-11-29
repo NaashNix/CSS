@@ -10,23 +10,29 @@
     <title>CSS Selectors</title>
     <style>
         /*Universal Selector*/
-   /*     *{
-            color: green;
-            font-size: 50px;
-        }*/
+        /*     *{
+                 color: green;
+                 font-size: 50px;
+             }*/
 
-        /*Type selector (Element)*/
-        h1{
+        /*
+                !*Type selector (Element)*!
+                h1{
+                    color: red;
+                    font-size: 90px;
+                }
+        */
+
+        /*ID selector*/
+        #my-header {
             color: red;
-            font-size: 90px;
         }
-
 
     </style>
 </head>
 <body>
 <header>
-    <h1>Hello There..!</h1>
+    <h1 id="my-header">Hello There..!</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consequatur culpa distinctio
         dolore, doloremque eum harum illo iste modi molestiae nisi nulla odit pariatur sed vitae voluptas. Esse,
         perferendis?</p>
@@ -45,7 +51,7 @@
     <h2>HEllo</h2>
 </main>
 <footer>
-<h1>This is in Footer</h1>
+    <h1>This is in Footer</h1>
 </footer>
 </body>
 </html>
