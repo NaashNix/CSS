@@ -60,24 +60,36 @@
                 background-color: red;
                 color: white;
             }
+
+             h1.selectedPara#my-header{
+             color: red;
+        }
+
     */
 
 
-        /*Psudo Selectors*/
+        /*Pseudo Selectors*/
 
-        /*psudo classes*/
+        /*Pseudo classes - select according to the element state*/
 
         li:first-child {
             color: red;
         }
 
-        li:last-child{
+        li:last-child {
             color: green;
         }
 
-        li:nth-child(4){
+        li:nth-child(4) {
             color: blue;
         }
+
+        h1:hover {
+            color: red;
+        }
+
+
+        /*Pseudo Element - select specific part of a selected element text*/
     </style>
 </head>
 <body>
