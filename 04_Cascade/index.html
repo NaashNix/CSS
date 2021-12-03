@@ -9,30 +9,34 @@
     <title>What is Cascade..?</title>
     <style>
 
-        /*2*/
+        /*2 (100)*/
         #title {
             color: green;
         }
 
-
-        /*3 - 3*/
+        /*3 - (10) 3*/
         .header {
             color: blue;
         }
 
-        /*3 - 2*/
+        /*3 - (10) 2*/
         :first-child {
             color: deeppink;
         }
 
-        /*3 - 1*/
+        /*3 - (10) 1*/
         [id] {
             color: orange;
         }
 
-        /*4*/
+        /*4 (1)*/
         h1 {
             color: red;
+        }
+
+        /*4 (1)*/
+        ::first-letter {
+            color: blueviolet;
         }
 
         * {
@@ -42,7 +46,7 @@
     </style>
 </head>
 <body>
-<!--1-->
+<!--1 (1000)-->
 <h1 class="header" id="title" style="color: brown">What is Cascade in CSS..?</h1>
 </body>
 </html>
