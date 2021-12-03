@@ -1,0 +1,56 @@
+<!--/**
+* @author : Sanu Vithanage
+* @since : 0.1.0
+**/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade Case 3</title>
+    <style>
+        .title {
+            color: orange;
+        }
+
+        #mainHeader {
+            color: purple;
+        }
+
+        #body > .subSection #mainHeader {
+            color: red;
+        }
+
+        #body > .subSection #mainHeader {
+            color: darkblue;
+        }
+
+        body > section > section > article > h1 {
+            color: aqua;
+        }
+
+        body#body > section#mainSection > section.subSection > article#mainArticle > h1.title#mainHeader {
+            color: deeppink;
+        }
+
+        body#body > section#mainSection > section.subSection > article#mainArticle > h1.title#mainHeader {
+            color: deepskyblue;
+        }
+
+        body h1#mainHeader {
+            color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body id="body">
+<section id="mainSection">
+    <section class="subSection">
+        <article id="mainArticle">
+            <h1 class="title" id="mainHeader" style="color: yellow">Hello There.. Select ME</h1>
+        </article>
+    </section>
+</section>
+
+</body>
+</html>
