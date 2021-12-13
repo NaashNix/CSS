@@ -41,11 +41,51 @@
         }
 
         body > div {
-            border: 2px solid red;
-            width: 100px;
-            height: 100px;
+            background: white;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            z-index: 2;
 
         }
+
+        body > div:nth-child(5) {
+            top: 0;
+            left: 0;
+            /* border-radius: 25px; */
+            /* border-top-left-radius: 136px; */
+            /* border-top-right-radius: 84px; */
+            /* border-bottom-left-radius: 100px; */
+            border-bottom-right-radius: 100%;
+
+        }
+
+        body > div:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        body > div:nth-child(7) {
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+        body > div:nth-child(8) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > div:nth-child(9) {
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -60,6 +100,12 @@
 <div></div>
 <div></div>
 <div></div>
+
+<!--center box-->
+<div>
+
+</div>
+
 
 </body>
 </html>
