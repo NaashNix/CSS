@@ -12,26 +12,37 @@
     <meta content="Institute of Software Engineering" name="author">
     <meta content="Institute of Software Engineering" name="owner">
     <link href="assets/css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
         header{
-            border: 1px solid red;
             position: relative;
             height: 80px;
+            box-shadow: 10px 20px 1px 1px black;
 
         }
 
         header>img{
-            width: 200px;
+            width: 213px;
+            margin: 21px;
         }
 
         header>ul{
             position: absolute;
             right: 30px;
             bottom: 0;
+            font-size: 24px;
+            font-family: 'Lobster', cursive;
             list-style: none;
         }
         header>ul>li{
-            display: inline;
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+        header>ul>li:hover{
+            cursor: pointer;
+            color: red;
         }
 
     </style>
