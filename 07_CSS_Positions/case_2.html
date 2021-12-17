@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
 
     <style>
         /*header start*/
@@ -73,16 +73,17 @@
 
         main > nav > ul > li {
             padding-bottom: 30px;
-            font-family:'Lobster', cursive;
+            font-family: 'Lobster', cursive;
         }
 
-        main > nav > ul > li > a{
+        main > nav > ul > li > a {
             text-decoration: none;
             color: #f3f1f1;
             padding-bottom: 4px;
             margin-left: 13px;
         }
-        main > nav > ul > li > a:hover{
+
+        main > nav > ul > li > a:hover {
             color: orange;
         }
 
@@ -90,6 +91,34 @@
             margin-left: 270px;
             padding: 10px;
         }
+
+        /* main> section content started*/
+        main > section > section {
+            border: 1px solid red;
+            height: 300px;
+            position: relative;
+        }
+
+        main > section > section > div {
+            border: 1px solid green;
+            position: absolute;
+            height: 100%;
+            width: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(1) {
+            left: 0;
+        }
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(3) {
+            left: calc((100% / 3)*2);
+        }
+
+        /*main> section content end*/
 
         /* main content end*/
 
@@ -111,7 +140,7 @@
 <main>
     <nav>
         <ul>
-            <li><i class="fas fa-home"></i><a href="index.html">Home</a> </li>
+            <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
             <li><i class="fas fa-globe-africa"></i><a href="index-1.html">Service</a></li>
             <li><i class="fas fa-id-badge"></i><a href="index-2.html">Contacts</a></li>
             <li><i class="fas fa-info-circle"></i><a href="#">About Us</a></li>
@@ -119,9 +148,9 @@
     </nav>
     <section>
         <section>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
         </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci cumque debitis dignissimos dolorem
             dolores esse et in magni minus molestiae necessitatibus recusandae, sapiente tempora ullam! Cumque
