@@ -15,13 +15,14 @@
             border: 1px solid red;
             position: relative;
             display: flex;
-            flex-direction: column-reverse;/*row/column*/
+            align-items: center; /*cross axis (center | flex-start | flex-end)*/
+            /*flex-direction: column-reverse;!*row/column*!*/
         }
 
         section>div{
             border: 1px solid green;
-            height: 100%;
-            width: 25%;
+            height: 100px;
+            width: 100px;
         }
 
         section>div:nth-child(1){
