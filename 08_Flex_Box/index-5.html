@@ -15,7 +15,7 @@
             border: 1px solid red;
             position: relative;
             display: flex;
-            flex-wrap: wrap;
+            /*flex-wrap: wrap;*/
             /*flex-direction: column-reverse;!*row/column*!*/
            /* align-items: center; !*cross axis (center | flex-start | flex-end)*!
             justify-content: space-evenly; !*main axis / space-between - space-around - space-evenly - center*!*/
@@ -24,26 +24,35 @@
         section > div {
             border: 1px solid green;
             height: 100px;
-            width: 700px;
+            width: 100px;
             /*flex-grow: 1;*/ /*can get flex container's full width for flex items*/
-            flex-shrink: 0; /*can compress a flex item in the container if it is overflow the container*/
+            /*flex-shrink: 1; !*can compress a flex item in the container if it is overflow the container*!*/
             /*flex-basis: 200px;*/
         }
 
         section > div:nth-child(1) {
+            flex-grow: 1;
             /*flex-grow: 1;*/
+            flex-basis: 200px;
+
         }
 
         section > div:nth-child(2) {
             /*flex-grow: 2;*/
+            flex-basis: 200px;
+
         }
 
         section > div:nth-child(3) {
             /*flex-grow: 1;*/
+            flex-basis: 200px;
+
         }
 
         section > div:nth-child(4) {
             /*flex-grow: 1;*/
+            flex-basis: 200px;
+
         }
 
     </style>
